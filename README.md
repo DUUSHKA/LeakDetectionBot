@@ -1,6 +1,21 @@
 # Leak Detection Bot Simulation
 
-This project simulates a leak detection scenario within a grid-based ship layout. Multiple bots with different detection algorithms are implemented to find and plug leaks in the ship. The project aims to compare the efficiency and effectiveness of different bot algorithms.
+Leak Detection Bot Simulation is a project that simulates a leak detection scenario within a grid-based ship layout. The simulation features multiple bots, each employing different detection algorithms to find and plug leaks. The primary goal is to compare the efficiency and effectiveness of these bots in navigating the ship and handling leaks.
+
+The project dynamically generates a grid representing the ship, with random obstacles and open paths, ensuring each simulation run is unique. Leaks are randomly placed within the grid, requiring bots to locate and plug them. Various detection algorithms are implemented, including heuristic-based movement, Breadth-First Search (BFS), probabilistic sensing, and combined probabilistic and heuristic approaches. Additionally, the project features bots capable of multi-leak detection.
+
+The bots implemented include:
+
+Bot1: Utilizes a heuristic approach with a fixed detection radius to find leaks.
+Bot2: Navigates the grid using BFS and detects leaks in the vicinity.
+Bot3: Implements a probabilistic model to sense and locate leaks based on city block distance.
+Bot4: Combines probabilistic sensing with a listening period before moving towards potential leak locations.
+Bot5: Uses a mix of heuristic movement and BFS for leak detection and plugging.
+Bot6: Detects all leaks within a vicinity and uses BFS for precise location and plugging.
+Bot7: Employs combined probabilistic sensing and BFS to navigate towards high-probability leak areas.
+Bot8: Enhances probabilistic sensing by combining probabilities from multiple leaks.
+Bot9: Integrates probabilistic sensing, listening duration, and BFS for efficient leak handling.
+Leak detection is a critical task in many industrial and maritime contexts. Efficient detection and plugging of leaks can prevent significant damage and loss. This project serves as a simulation framework to explore and compare different strategies for autonomous leak detection, which can inform real-world applications and improvements in robotic systems.
 
 ## Table of Contents
 - [Overview](#overview)
